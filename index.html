@@ -1344,6 +1344,15 @@
           <!-- Быстрые действия -->
           <h3 style="margin: 30px 0 20px;"><i class="fas fa-bolt"></i> Быстрые действия</h3>
           <div class="grid">
+            <div class="function-card" onclick="showCreateCardModal()" style="background: linear-gradient(135deg, rgba(76, 201, 240, 0.1), rgba(157, 78, 221, 0.1)); border: 2px solid var(--primary-blue);">
+              <i class="fas fa-plus-circle" style="color: var(--primary-blue);"></i>
+              <h4 style="color: var(--primary-blue);">Создать карточку</h4>
+              <p>Создать новую карточку с заданием для учеников</p>
+              <button class="btn btn-primary" style="margin-top: 15px;">
+                <i class="fas fa-plus"></i> Создать
+              </button>
+            </div>
+            
             <div class="function-card" onclick="toggleAccess('teachers')">
               <i class="fas fa-chalkboard-teacher"></i>
               <h4>Учителя</h4>
@@ -2532,12 +2541,9 @@
       <div style="margin-bottom: 20px;">
         <label style="display: block; margin-bottom: 8px;">Предмет</label>
         <select id="cardSubject" style="width: 100%;">
-          <option value="math">Математика</option>
           <option value="russian">Русский язык</option>
-          <option value="english">Английский язык</option>
-          <option value="physics">Физика</option>
-          <option value="chemistry">Химия</option>
-          <option value="biology">Биология</option>
+          <option value="math">Математика</option>
+          <option value="world">Окружающий мир</option>
         </select>
       </div>
       
